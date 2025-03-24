@@ -1,0 +1,99 @@
+.key-features-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative;
+}
+
+.key-features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+/* Add Yellow Line Below the Heading */
+.key-features-section h2::after {
+    content: "";
+    display: block;
+    width: 60px; /* Length of the yellow line */
+    height: 4px; /* Thickness of the yellow line */
+    background-color: #ffcc00; /* Yellow color */
+    margin: 12px auto 0; /* Center the line and add space below */
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 6px; /* Further reduced space between boxes */
+    padding: 20px 20px; /* Adjusted padding to the sides */
+    margin: 0 auto;
+    max-width: 700px; /* Adjusted container width to fit 3 small boxes */
+    position: relative;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.feature-box {
+    background-color: white;
+    padding: 8px; /* Further reduced padding inside the box */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 150px; /* Further decreased minimum width for each box */
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+    margin: 4px; /* Reduced margin around the boxes */
+}
+
+.feature-icon {
+    font-size: 30px; /* Further reduced icon size */
+    margin-bottom: 6px; /* Reduced space between icon and text */
+    color: #007bff; /* Blue color for icons */
+}
+
+.feature-box h3 {
+    font-size: 1rem; /* Further reduced title size */
+    margin-bottom: 5px; /* Reduced space between title and description */
+    color: #333;
+}
+
+.feature-box p {
+    font-size: 0.7rem; /* Further reduced description size */
+    color: #555;
+    line-height: 1.1;
+}
+
+/* Scroll Arrows */
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px; /* Reduced arrow button size */
+    height: 30px; /* Reduced arrow button size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.scroll-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-arrow.left {
+    left: 200px; /* Adjusted distance from the left border */
+}
+
+.scroll-arrow.right {
+    right: 200px; /* Adjusted distance from the right border */
+}

@@ -1,0 +1,81 @@
+.features {
+  padding: 60px 20px;
+  text-align: center;
+
+}
+
+/* Top and Bottom Boxes Container */
+.top-boxes,
+.bottom-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* More space between boxes */
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+
+/* Feature Item (Box) */
+.feature-item {
+  background: white;
+  padding: 0px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 6px solid #ffcc00; /* Thicker yellow border */
+  flex: 1;
+  min-width: 32px; /* Increased min width */
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Add Hover Effect */
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.feature-item svg {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* Title Styling */
+.feature-item h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Description Text */
+.feature-item p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* How We Help You? Section */
+.how-we-help {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.how-we-help h3 {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+/* Add Yellow Underline */
+.how-we-help h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin: 12px auto 0;
+}

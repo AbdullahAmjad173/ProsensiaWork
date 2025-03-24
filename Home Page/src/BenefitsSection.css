@@ -1,0 +1,66 @@
+.benefits-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  overflow: visible; /* Ensure margins are visible */
+}
+
+.benefits-section .benefit-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* Space between text and image */
+  margin-bottom: 100px; /* Increased space between rows */
+  max-width: 900px; /* Decreased width */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Reverse the order for the first row (pic1 on the right) */
+.benefit-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1; /* Take up remaining space */
+  text-align: left;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px; /* Increased space between heading and paragraph */
+  color: #333;
+}
+
+.text p {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.image {
+  width: 300px; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.benefits-section .benefit-item {
+  margin-bottom: 40px; /* Even more space between rows */
+}
+
+.benefits-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  overflow: visible; /* Ensure margins are visible */
+}
+
+.highlight {
+  color: rgb(255, 145, 77); /* Orange color */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+.benefits-section {
+  padding: 0px 0px;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-bottom: 20px; /* Reduced margin */
+}

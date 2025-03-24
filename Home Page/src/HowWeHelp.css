@@ -1,0 +1,30 @@
+.how-we-help-section {
+    padding: 100px 20px;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .how-we-help-section h2.yellow-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Yellow color */
+  }
+  
+  .how-we-help-section p {
+    font-size: 1.2rem;
+    font-weight: 1000;
+    color: rgb(255 255 255); /* White color for the base text */
+    line-height: 1.6;
+  }
+  
+  .green-text {
+    color: #28a745; /* Green color */
+  }
+  
+  .orange-text {
+    color: #ff8c42; /* Orange color */
+  }
+  
+  .blue-text {
+    color: #007bff; /* Blue color */
+  }

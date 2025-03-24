@@ -1,0 +1,55 @@
+.header {
+  text-align: center;
+  padding: 20px 20px; /* Adjusted padding to account for the fixed navbar */
+  background-image: url('img1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2; /* Ensures text is above the overlay */
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  white-space: pre-line; /* Preserve line breaks */
+}
+
+.cta button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: rgb(255, 145, 77);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: rgb(255, 145, 77);
+}

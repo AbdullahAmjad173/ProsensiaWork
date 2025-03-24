@@ -1,0 +1,15 @@
+.benefits {
+    padding: 50px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .benefits p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }

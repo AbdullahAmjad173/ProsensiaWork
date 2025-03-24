@@ -1,0 +1,17 @@
+.smart-city-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .smart-city-image {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+
+  .smart-city-section {
+    padding: 0px 20px 50px; /* Reduced top padding */
+    background-color: #f9f9f9;
+    text-align: center;
+  }
