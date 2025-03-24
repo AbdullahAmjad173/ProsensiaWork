@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Team Section</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Basic Styling for Toggle Buttons */
+      .toggle-buttons {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .toggle-buttons button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: #15bebe;
+        color: white;
+        border-radius: 5px;
+      }
+      .toggle-buttons button:hover {
+        background-color: #3db1ab;
+      }
+
+      /* Hide sections by default */
+      .team-section {
+        display: none;
+      }
+
+      /* Show the active section */
+      .team-section.active {
+        display: block;
+      }
+
+      /* Card Container Styling */
+      .card_Container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Reduced gap */
+      }
+
+      /* Card Styling */
+      .card {
+        width: 100px; /* Card width */
+        text-align: center;
+        background: #f9f9f9;
+        border-radius: 10px;
+        padding: 10px; /* Reduced padding */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px; /* Added margin for spacing */
+      }
+
+      /* Image Styling */
+      .imbBx img {
+        width: 150px; /* Image width matches card width */
+        height: 150px; /* Image height matches card width */
+        border-radius: 10px; /* Rounded corners only at the top */
+        object-fit: cover; /* Ensures the image covers the area without distortion */
+      }
+
+      /* Content Styling */
+      .contentBx h3 {
+        margin: 8px 0; /* Adjusted margin */
+        font-size: 16px; /* Reduced font size */
+      }
+      .contentBx span {
+        font-size: 12px; /* Reduced font size */
+        color: #555;
+      }
+
+      /* Social Icons Styling */
+      .sci {
+        display: flex;
+        justify-content: center;
+        gap: 8px; /* Reduced gap */
+        padding: 0;
+        list-style: none;
+      }
+      .sci a {
+        color: #007bff;
+        font-size: 16px; /* Reduced icon size */
+      }
+      .sci a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Toggle Buttons -->
+      <div class="toggle-buttons">
+        <button onclick="showSection('founders')">Founders</button>
+        <button onclick="showSection('advisors')">Advisors</button>
+        <button onclick="showSection('team')">Team</button>
+      </div>
+
+      <!-- Founders Section -->
+      <div id="founders" class="team-section active">
+        <div class="title">
+          <h4>Our Founders</h4>
+        </div>
+
+        <div class="card_Container">
+          <!-- Founder: Momin -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic01.jpg" alt="Momin" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Momin <br /><span>Founder of Prosensia</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic01.jpg" alt="Momin" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Momin <br /><span>Founder of Prosensia</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- COO: Hamza -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic02.jpg" alt="Hamza" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Hamza <br /><span>Chief Operating Officer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advisors Section -->
+      <div id="advisors" class="team-section">
+        <div class="title">
+          <h4>Our Advisors</h4>
+        </div>
+
+        <div class="card_Container">
+          <!-- Advisor 1 -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic09.jpg" alt="Advisor 1" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Smith <br /><span>Business Strategist</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Advisor 2 -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic10.jpg" alt="Advisor 2" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Jane Doe <br /><span>Financial Advisor</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Advisor 3 -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic11.jpg" alt="Advisor 3" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Alice Johnson <br /><span>Tech Consultant</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Advisor 4 -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic12.jpg" alt="Advisor 4" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Robert Brown <br /><span>Marketing Expert</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Advisor 5 -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic13.jpg" alt="Advisor 5" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Emily Davis <br /><span>Legal Advisor</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Section -->
+      <div id="team" class="team-section">
+        <div class="title">
+          <h4>Our Team Section</h4>
+        </div>
+
+        <div class="card_Container">
+          <!-- Web Developer: Abdullah Amjad -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic03.jpg" alt="Abdullah Amjad" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Abdullah Amjad <br /><span>Web Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Back-End Developer: Alex Morgan -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic04.jpg" alt="Alex Morgan" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Alex Morgan <br /><span>Back-End Web Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Additional Team Members -->
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic05.jpg" alt="Sarah Lee" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Sarah Lee <br /><span>UI/UX Designer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic06.jpg" alt="John Doe" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>John Doe <br /><span>Mobile App Developer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic07.jpg" alt="Emily Clark" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Emily Clark <br /><span>Data Scientist</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="imbBx">
+              <img src="./image/pic08.jpg" alt="Michael Brown" />
+            </div>
+            <div class="content">
+              <div class="contentBx">
+                <h3>Michael Brown <br /><span>DevOps Engineer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to toggle between sections
+      function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll(".team-section").forEach((section) => {
+          section.classList.remove("active");
+        });
+
+        // Show the selected section
+        document.getElementById(sectionId).classList.add("active");
+      }
+    </script>
+  </body>
+</html>
